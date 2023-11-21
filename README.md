@@ -1,2 +1,4 @@
 # policy_iteration
-Performs the process of policy iteration on three states (one absorbing state) each with two possible actions.
+The following code performs the process of Policy Iteration on three states (one absorbing state) each with two possible actions. The states we are simulating represent the employment status of a worker: Safely Employed (SE), Performance Improvement Plan (PIP), and Unemployed (UE; an absorbing state). In either of the first two states, the actor can choose one of two actions to complete in their free time: Watch Netflix _or_ Code. Depending on the action and the current state the actor is in, there are some arbitrarily chosen probabilities for where they might end up. These are listed in the variable "t_p".
+
+We make use of matplotlib to plot a simulation of our results - as if a real actor were playing this "game" of employment for 50 rounds. Notice the different results depending on the different values for the discount factor gamma. The equations and logic we see in the policy_evaluation() come from doing the math out by hand.
